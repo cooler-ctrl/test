@@ -1,0 +1,294 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+     
+  }
+ 
+  
+  body {
+    background-color: #191919;
+      height: 100vh;
+      color: white;
+  }
+  
+  header {
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      position: absolute;
+      width:85%;
+      z-index: 9999; 
+      margin: auto 100px;
+      
+  }
+ 
+  
+  .logo {
+      display: flex;
+      align-items: center;
+     
+  }
+  .logo img{
+    height: 60px;
+    
+  }
+
+  nav ul {
+    
+      list-style: none;
+      display: flex;
+      gap: 20px;
+  }
+
+  nav ul li a {
+    padding: 30px;
+    font-family: sans-serif;
+      color: rgba(255, 255, 255, 0.671);
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+  }
+  nav ul li a:hover{
+    color: #D69ADE;
+  }
+  
+  .auth-buttons button {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+  }
+  
+  .sign-in {
+      background: white;
+      color: black;
+      box-shadow: 0 0 50px 1px #ffffff89;
+  }
+  
+  .sign-up {
+      background: #D69ADE;
+      box-shadow: 0 0 50px 1px #d69ade89;
+      color: white;
+  }
+  
+  .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background: url('/img/Etihad_Stadium\ 1.png') no-repeat center center/cover;
+      position: relative;
+  }
+  
+  .hero h1 {
+      font-size: 46px;
+      text-align: left;
+      font-family: inria-serif;
+      font-weight: 500;
+      margin-bottom: 20px;
+      background: none;
+  }
+  
+  .search-bar {
+    border: #D69ADE 1px solid;
+     width: 410px;
+      display: flex;
+      gap: 10px;
+      background: #2C2C2C;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0px 13px 40px 0px rgba(0, 0, 0, 0.25);
+  }
+  .search-stuf{
+    display: inline-flex;
+  }
+  
+  .search-bar input {
+      border: none;
+      padding: 10px;
+      background: #2C2C2C;
+      color: rgba(255, 255, 255, 0.766);
+      outline: none;
+      
+  }
+  .search-bar img{
+    background: none;
+    padding-left: 130px;
+  }
+  .search-button {
+    margin-left: 20px;
+    width:29%;
+       font-size: 19px;
+      background: #D69ADE;
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+      font-family: inria;
+      box-shadow: 0 0 50px 1px #d69ade89;
+      color: white;
+  }
+  .pjesa2{
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;     
+  }
+  .pjesa2 img{
+    max-width: 100%;
+  }
+
+
+  .card-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100vh;
+
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.card {
+    width: 380px;
+    height: 500px;
+    background: white;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 100px 20px #d69ade74;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.card img {
+    width: 100%;
+    position: absolute;
+    background:none;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title {
+    
+    padding-left: 20px;
+    background:none;
+    font-family: sans-serif;
+    color: #d69adebd;
+    font-size: 24px;
+    font-weight: bold;
+}
+.value {
+   padding-left: 20px;
+    background:none;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #D69ADE;
+}
+.hot {
+    margin: 30px 25px;
+    font-family: sans-serif;
+    display: inline-block;
+    background: rgba(255, 187, 0, 0.887);
+    color: #825f1e;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+.card-container h1{
+    text-align: center;
+    font-family: inirsa;
+    font-size: 100px;
+
+}
+.faq-container {
+
+    font-size: 28px;
+    width: 80%;
+    margin: 250px auto;
+    padding: 50px;
+    
+}
+.faq-item {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #444;
+}
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background: #1a1a1a;
+}
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #191919;
+    font-weight: thin;
+}
+.arrow {
+    transition: transform 0.3s ease;
+}
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+
+
+.footer {
+    box-shadow: 0px -4px 70px 20px #d69ade4a;
+    width: 100%;
+    height: 350px;
+    background: #1c1c1c;
+    color: #ccc;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.footer-left {
+    margin-left: 200px;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-left img {
+    background: none;
+    width: 200px;
+    margin-top: 10px;
+
+}
+.footer-right {
+    background: none;
+    text-align: left;
+    padding-right: 200px;
+}
+.footer-right p {
+    font-size:18px;
+    padding: 10px;
+    background: none;
+    margin: 5px 0;
+}
+
